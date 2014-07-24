@@ -1,6 +1,6 @@
 <?php
 $connection = mysql_connect('127.0.0.1', 'root', '');
-mysql_select_db('auroratesting');
+mysql_select_db('population');
 
 // mysql_connect(‘SQLdata.com’, ‘Jones’, ‘un1c0rn’, ‘my_database’);
 // Check connection
