@@ -20,7 +20,6 @@ if ($connection) {
          "Author: ".$row['author']."<br>".
          "Body: ".$row['body'].'<br>"'.
   }
-?>
  
 }
  
