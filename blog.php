@@ -18,8 +18,7 @@ if ($connection) {
   while ($row = mysql_fetch_array($result)) {
     echo "Name: ". $row['name']."<br>".
          "Author: ".$row['author']."<br>".
-         "Body: ".$row['body'].'<br>"'.
-  }
+         "Body: ".$row['body'].'<br>"';  }
  
 }
  
