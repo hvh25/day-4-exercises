@@ -22,7 +22,7 @@ if ($connection) {
     if ($_GET['city'] != '' && $row['city_name'] == $city) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
-    elseif ($_GET['city'] == '') {
+    else {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
     //else {echo "The population of ". $row['city_name']."is". $row['population']."<br>";
