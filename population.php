@@ -9,7 +9,7 @@ if (!$connection) {
 }
  
 if ($connection) {
-  $result = mysql_query('SELECT city_name, population FROM day-4-exercises');
+  $result = mysql_query('SELECT city_name, population FROM population');
   
     // Fetch the data from the result
   while ($row = mysql_fetch_array($result)) {
