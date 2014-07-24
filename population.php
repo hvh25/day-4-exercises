@@ -1,5 +1,5 @@
 <?php
-$_GET['city'] = ''? $city = '' : $city = $_GET['city'];
+$_GET['city'] = ''? $city = 0 : $city = $_GET['city'];
 ?>
 <h1>Welcome to Population Data Online</h1>
 
@@ -18,7 +18,7 @@ if ($connection) {
   
     // Fetch the data from the result
   while ($row = mysql_fetch_array($results)) {
-    if ($row['city_name'] == $city || $city == "") {
+    if ($row['city_name'] == $city || $city == 0) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
   }
