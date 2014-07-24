@@ -18,7 +18,7 @@ if ($connection) {
   
     // Fetch the data from the result
   while ($row = mysql_fetch_array($results)) {
-    if ($row == $city) {
+    if ($row['city_name'] == $city) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
   }
