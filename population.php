@@ -14,11 +14,13 @@ if (!$connection) {
 }
  
 if ($connection) {
-  $cities = mysql_query('SELECT city_name, population FROM population');
+  $results = mysql_query('SELECT city_name, population FROM population');
   
     // Fetch the data from the result
-  if ($city == mysql_fetch_array($cities)) {
-    echo "The population of ". $city['city_name']."is". $city['population']."<br>";
+  while ($row = mysql_fetch_array($results)) {
+    if ($row == $city) {
+      echo "The population of ". $row['city_name']."is". $row['population']."<br>";
+    }
   }
 }
 ?>
