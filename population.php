@@ -1,6 +1,6 @@
 <?php
 if ($_GET['city'] != '') {$city = $_GET['city'];}
-echo $_$_GET['city'];
+echo $_GET['city'];
 ?>
 <h1>Welcome to Population Data Online</h1>
 
