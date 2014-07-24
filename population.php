@@ -13,7 +13,7 @@ if ($connection) {
   
     // Fetch the data from the result
   while ($row = mysql_fetch_array($result)) {
-    echo "The population of ". $row['city_name']."is". $row['population'];
+    echo "The population of ". $row['city_name']."is". $row['population']."<br>";
   }
 }
 ?>
