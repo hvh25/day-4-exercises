@@ -21,8 +21,8 @@ if ($connection) {
     if ($row['city_name'] == $city) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
-    else {echo "The population of ". $row['city_name']."is". $row['population']."<br>";
-    }
+    //else {echo "The population of ". $row['city_name']."is". $row['population']."<br>";
+    //}
   }
 
 }
