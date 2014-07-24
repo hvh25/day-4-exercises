@@ -17,7 +17,7 @@ if ($connection) {
   $cities = mysql_query('SELECT city_name, population FROM population');
   
     // Fetch the data from the result
-  while ($city = mysql_fetch_array($cities)) {
+  if ($city == mysql_fetch_array($cities)) {
     echo "The population of ". $city['city_name']."is". $city['population']."<br>";
   }
 }
