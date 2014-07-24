@@ -1,5 +1,5 @@
 <?php
-if ($_GET['city'] != '') {$city = $_GET['city'];}
+if ($_GET['city'] != nil) {$city = $_GET['city'];}
 ?>
 <h1>Welcome to Population Data Online</h1>
 
@@ -18,10 +18,10 @@ if ($connection) {
   
     // Fetch the data from the result
   while ($row = mysql_fetch_array($results)) {
-    if ($row['city_name'] == $city && $_GET['city'] != '') {
+    if ($_GET['city'] != nil && $row['city_name'] == $city) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
-    else {
+    elseif ($_GET['city'] == nil) {
       echo "The population of ". $row['city_name']."is". $row['population']."<br>";
     }
     //else {echo "The population of ". $row['city_name']."is". $row['population']."<br>";
