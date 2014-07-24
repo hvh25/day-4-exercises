@@ -1,5 +1,5 @@
 <?php
-$city = $_GET['city'];
+$_GET['city'] = ''? $city = '' : $city = $_GET['city'];
 ?>
 <h1>Welcome to Population Data Online</h1>
 
